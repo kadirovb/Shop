@@ -1,0 +1,57 @@
+.details {
+  padding: 40px 0;
+
+  &__container {
+    position: relative;
+  }
+
+  &__back {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    padding: 8px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+  }
+
+  &__content {
+    span {
+      color: #777;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 15px 0 20px;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin: 25px 0;
+    }
+  }
+}
