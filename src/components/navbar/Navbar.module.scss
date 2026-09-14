@@ -39,4 +39,49 @@
     font-size: 22px;
     cursor: pointer;
   }
+
+  @media (max-width: 900px) {
+  .navbar {
+    &__container {
+      min-height: 70px;
+    }
+
+    &__logo {
+      font-size: 26px;
+    }
+
+    &__menu {
+      gap: 20px;
+
+      a {
+        font-size: 13px;
+      }
+    }
+
+    &__cart {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    &__container {
+      min-height: 60px;
+      padding: 0 15px;
+    }
+
+    &__logo {
+      font-size: 22px;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__cart {
+      font-size: 20px;
+    }
+  }
+}
 }
